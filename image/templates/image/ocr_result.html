@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	{% extends 'base.html' %}
+	{% block content %}
+	{% for image in images %}
+		<img class="img-responsive" width="460" height="345" src="{{ image.uploaded_Img.url }}">
+	{% endfor %}
+	{% for ocr_obj in ocr_objs %}
+		<p><a href="{{ ocr_obj.OCR_txt.url }}">Link to text file</a></p>
+    	<p><a href="{{ocr_obj.OCR_pdf.url}}">Link to searchable pdf</a></p>
+	{% endfor %}
+	{% endblock content%}
+</object>	
+</body>
+</html>
+
