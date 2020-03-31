@@ -14,7 +14,7 @@ Image augmentation and OCR using Django
 6. Run the project server by executing ```python3 manage.py```
 
 ### Client-side
-1. Open a browser and visit ```localhost:8000```
+1. Open a browser and visit ```localhost:8000/image```
 2. Upload images for Augmentation and OCR.
 3. You can download the augmented images.
 4. You can download text file or a searchable pdf after OCR.
