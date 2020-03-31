@@ -11,7 +11,7 @@ Image augmentation and OCR using Django
 3. Clone this repository and make it your cuurent working directory
 4. Create a virtual environment ```virtualenv venv``` and activate it ```source venv/bin/activate```
 5. Install all the required libraries by executing ```pip3 install -r requirements.txt```
-6. Run the project server by executing ```python3 manage.py```
+6. Run the project server by executing ```python3 manage.py runserver```
 
 ### Client-side
 1. Open a browser and visit ```localhost:8000/image```
