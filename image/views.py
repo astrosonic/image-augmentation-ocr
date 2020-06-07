@@ -11,6 +11,7 @@ import os
 def home(request):
 	return render(request, 'image/home.html')
 
+
 def augmentation(request): 
 	if request.method == 'POST':
 		form = ImageForm(request.POST, request.FILES) 

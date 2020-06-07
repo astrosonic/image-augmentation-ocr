@@ -21,6 +21,8 @@ class ImageForm(forms.ModelForm):
             			})
 		}
 
+
+
 class OCRForm(forms.ModelForm):
 	class Meta:
 		model = Image
