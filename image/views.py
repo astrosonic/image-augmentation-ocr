@@ -11,6 +11,7 @@ import os
 def home(request):
 	return render(request, 'image/home.html')
 
+
 def augmentation(request): 
 	if request.method == 'POST':
 		form = ImageForm(request.POST, request.FILES) 
@@ -54,7 +55,10 @@ def augmentation(request):
 				aug_img5.augmented_image = '/augmented_images/blur.png'
 				aug_img5.save()
 			if Image.objects.filter().order_by('-id')[0].random==True:
-				aug_imgs, n = img_aug_obj.Random()
+				#Number of random images to generate.
+				n = form.cleaned_data.get('random_images')
+				
+				aug_imgs, n = img_aug_obj.Random(n)
 				aug_img_obj_list = []
 				for i in range(n):
 					a_img = AugmentedImages()
