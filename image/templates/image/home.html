@@ -1,20 +1,35 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-	<meta charset="UTF-8"> 
-	<title>Hotel_image</title> 
-</head> 
-<body> 
-	{% extends 'base.html' %}
-	{% block content %}
-	
-	{% endblock content%}
-<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel_image</title>
+
+    <style>
+      .container {
+        text-align: center;
+      }
+      .container h1 {
+        color: #393e46;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    {% extends 'base.html' %} {% block content %}
+    <div class="container">
+      <h1>Image Augmentation</h1>
+      <br />
+      <h1>&</h1>
+      <br />
+      <h1>OCR</h1>
+    </div>
+    {% endblock content%}
+    <!--
 	<form method="POST">
 		{% csrf_token %}
 		<button type="submit" class="btn btn-light" name="augmentation"value="augmentation">Augmentation</button>
 		<button type="submit" class="btn btn-light" name="ocr" value="ocr">OCR</button>
 	</form>
--->		 
-</body> 
-</html> 
+-->
+  </body>
+</html>
